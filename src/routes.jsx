@@ -1,7 +1,7 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home';
+import { RequireAuth } from './components/RequireAuth';
 import { ScrollToTop } from './components/ScrollToTop';
+import { Home } from './pages/Home';
 
 export const AppRoutes = () => {
 	return (
@@ -9,6 +9,10 @@ export const AppRoutes = () => {
 			<ScrollToTop>
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route
+						path="/securedRoute"
+						element={<RequireAuth>{/* <SecuredPage /> */}</RequireAuth>}
+					/>
 				</Routes>
 			</ScrollToTop>
 		</Router>
