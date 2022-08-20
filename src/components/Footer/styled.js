@@ -25,8 +25,8 @@ export const SScrollUp = styled(Button)`
 	border-radius: 50%;
 	cursor: pointer;
 	position: absolute;
-	bottom: -430px;
-	right: 150px;
+	bottom: -1320px;
+	right: 140px;
 `;
 
 export const SSubcontainer = styled.div`

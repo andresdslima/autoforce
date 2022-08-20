@@ -19,6 +19,10 @@ export const SContainer = styled(Container)`
 			font-size: 12px;
 			line-height: 16px;
 			margin-top: 0.5rem;
+
+			em {
+				text-decoration: underline;
+			}
 		}
 
 		h1 {
