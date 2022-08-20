@@ -9,6 +9,11 @@ export const SContainer = styled(Container)`
 	align-items: center;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	width: 100%;
+
+	@media (max-width: 768px) {
+		padding: 0.75rem 1rem 1rem 1rem;
+		flex-direction: column;
+	}
 `;
 
 export const SButton = styled(Button)`
@@ -30,6 +35,15 @@ export const SButton = styled(Button)`
 	&:hover {
 		background: ${props => (props.name === 'whatsapp' ? '#2DAF38' : '#304ACB')};
 		cursor: pointer;
+	}
+
+	@media (max-width: 768px) {
+		margin: 0;
+		margin-top: 1rem;
+
+		&#mobile {
+			margin-right: 1rem;
+		}
 	}
 `;
 

@@ -33,4 +33,14 @@ export const SContainer = styled(Container)`
 			line-height: 22px;
 		}
 	}
+
+	@media (max-width: 768px) {
+		padding: 0.75rem 1rem 1rem 1rem;
+
+		div {
+			&#sub-container {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
 `;

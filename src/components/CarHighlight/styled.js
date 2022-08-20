@@ -25,6 +25,15 @@ export const SContainer = styled(Container)`
 		font-size: 24px;
 		line-height: 33px;
 	}
+
+	@media (max-width: 768px) {
+		padding: 0.75rem 1rem 0 1rem;
+
+		h3 {
+			width: 100%;
+			font-size: 24px;
+		}
+	}
 `;
 
 export const SButton = styled(Button)`
@@ -151,6 +160,23 @@ export const SCarContainer = styled.div`
 				span {
 					margin-left: 1rem;
 				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		div {
+			&.gridContainer {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			&#mobile {
+				display: flex;
+				justify-content: center;
 			}
 		}
 	}

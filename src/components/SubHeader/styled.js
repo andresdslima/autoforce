@@ -33,4 +33,8 @@ export const SContainer = styled(Container)`
 			color: #000;
 		}
 	}
+
+	@media (max-width: 768px) {
+		padding: 0.75rem 1rem 1rem 1rem;
+	}
 `;

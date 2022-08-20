@@ -29,6 +29,10 @@ export const SContainer = styled(Container)`
 		font-style: normal;
 		font-size: 14px;
 		line-height: 19px;
-    margin-bottom: 4rem;
+		margin-bottom: 4rem;
+	}
+
+	@media (max-width: 768px) {
+		padding: 0.75rem 1rem 1rem 1rem;
 	}
 `;

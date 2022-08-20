@@ -17,7 +17,7 @@ export const Header = () => {
 				</Link>
 			</div>
 			<div>
-				<S.SButton>
+				<S.SButton id="mobile">
 					<a href="tel:11888888888" target="_blank" rel="noreferrer">
 						<img src={phone} alt="Ligue agora" />
 						LIGUE AGORA

@@ -17,6 +17,10 @@ export const SContainer = styled(Container)`
 	a {
 		text-decoration: underline;
 	}
+
+	@media (max-width: 768px) {
+		padding: 0.75rem 1rem 1rem 1rem;
+	}
 `;
 
 export const SScrollUp = styled(Button)`
@@ -27,6 +31,15 @@ export const SScrollUp = styled(Button)`
 	position: absolute;
 	bottom: -1320px;
 	right: 140px;
+
+	@media (max-width: 768px) {
+		bottom: -1905px;
+	}
+
+	@media (max-width: 425px) {
+		bottom: -1948px;
+		right: 70px;
+	}
 `;
 
 export const SSubcontainer = styled.div`
@@ -40,6 +53,10 @@ export const SSubcontainer = styled.div`
 
 	* {
 		margin: 0.5rem 0;
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
 	}
 `;
 

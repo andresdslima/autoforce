@@ -89,15 +89,17 @@ export const CarHighlight = () => {
 							</span>
 						</div>
 					</div>
-					<S.SButton>
-						<a
-							href="https://site.autoforce.com"
-							target="_blank"
-							rel="noreferrer"
-						>
-							TENHO INTERESSE
-						</a>
-					</S.SButton>
+					<div id="mobile">
+						<S.SButton>
+							<a
+								href="https://site.autoforce.com"
+								target="_blank"
+								rel="noreferrer"
+							>
+								TENHO INTERESSE
+							</a>
+						</S.SButton>
+					</div>
 				</div>
 			</S.SCarContainer>
 		</S.SContainer>
