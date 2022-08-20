@@ -33,11 +33,11 @@ export const SScrollUp = styled(Button)`
 	right: 140px;
 
 	@media (max-width: 768px) {
-		bottom: -1905px;
+		bottom: -1915px;
 	}
 
 	@media (max-width: 425px) {
-		bottom: -1948px;
+		bottom: -1965px;
 		right: 70px;
 	}
 `;
