@@ -34,7 +34,7 @@ export const SSubcontainer = styled.div`
 	flex-direction: ${props => props.flexDirection};
 	align-items: ${props => props.alignItems};
 	justify-content: space-between;
-	border-bottom: ${props => props.borderBottom};
+	border-bottom: ${props => props.border};
 	width: 100%;
 	padding: 0.5rem 0;
 

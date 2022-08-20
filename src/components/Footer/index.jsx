@@ -21,7 +21,7 @@ export const Footer = () => {
 			<S.SSubcontainer
 				alignItems="center"
 				flexDirection="row"
-				borderBottom="1px solid #fff"
+				border="1px solid #fff"
 			>
 				<div>
 					<Link to="/">
@@ -56,7 +56,7 @@ export const Footer = () => {
 			<S.SSubcontainer
 				alignItems="flex-start"
 				flexDirection="column"
-				borderBottom="1px solid #fff"
+				border="1px solid #fff"
 			>
 				<span>
 					<strong>Razão Social: </strong>AUTO FORCE PLATAFORMA DE MARKETING
@@ -80,7 +80,7 @@ export const Footer = () => {
 			<S.SSubcontainer
 				alignItems="center"
 				flexDirection="row"
-				borderBottom="none"
+				border="none"
 			>
 				<Link to="/">
 					<img src={autoforce} alt="Autoforce" />
