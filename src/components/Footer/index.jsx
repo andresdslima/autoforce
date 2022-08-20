@@ -6,6 +6,7 @@ import instagram from '../../assets/icons/instagram.svg';
 import linkedin from '../../assets/icons/linkedin.svg';
 import youtube from '../../assets/icons/youtube.svg';
 import pageUp from '../../assets/icons/pageUp.svg';
+import link from '../../assets/icons/link.svg';
 
 export const Footer = () => {
 	const scrollUp = () => {
@@ -17,13 +18,18 @@ export const Footer = () => {
 			<S.SScrollUp onClick={scrollUp}>
 				<img src={pageUp} alt="Ir para o topo da página" />
 			</S.SScrollUp>
-			<div>
+			<S.SSubcontainer
+				alignItems="center"
+				flexDirection="row"
+				borderBottom="1px solid #fff"
+			>
 				<div>
 					<Link to="/">
 						<img src={dealer} alt="Dealer" />
 					</Link>
 				</div>
-				<div>
+				<S.SSocialContainer>
+					<span>SIGA-NOS:</span>
 					<a
 						href="https://www.instagram.com/autoforcebr"
 						target="_blank"
@@ -45,14 +51,54 @@ export const Footer = () => {
 					>
 						<img src={youtube} alt="YouTube" />
 					</a>
-				</div>
-			</div>
-			<div></div>
-			<div>
+				</S.SSocialContainer>
+			</S.SSubcontainer>
+			<S.SSubcontainer
+				alignItems="flex-start"
+				flexDirection="column"
+				borderBottom="1px solid #fff"
+			>
+				<span>
+					<strong>Razão Social: </strong>AUTO FORCE PLATAFORMA DE MARKETING
+					DIGITAL LTDA
+				</span>
+				<span>
+					<strong>CNPJ: </strong>22.588.947/0001-06
+				</span>
+				<span>
+					<strong>Endereço Matriz: </strong>Torre Business, Av. Amintas Barros,
+					3700. Lagoa Nova, Natal/RN. CEP 59075-250{' '}
+					<a
+						href="https://g.page/autoforcebr?share"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Ver Mapa <img src={link} alt="Link para o mapa" />
+					</a>
+				</span>
+			</S.SSubcontainer>
+			<S.SSubcontainer
+				alignItems="center"
+				flexDirection="row"
+				borderBottom="none"
+			>
 				<Link to="/">
 					<img src={autoforce} alt="Autoforce" />
 				</Link>
-			</div>
+				<div>
+					<small>
+						© Copyright 2021 - AutoForce - Todos os direitos reservados
+					</small>
+					<br />
+					<small>
+						Confira a nossa{' '}
+						<a href="/" target="_blank" rel="noreferrer">
+							Politica de privacidade
+						</a>
+						.
+					</small>
+				</div>
+			</S.SSubcontainer>
 		</S.SContainer>
 	);
 };
