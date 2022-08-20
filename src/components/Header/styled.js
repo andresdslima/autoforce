@@ -12,7 +12,7 @@ export const SContainer = styled(Container)`
 `;
 
 export const SButton = styled(Button)`
-	background: ${props => props.color};
+	background: ${props => (props.name === 'whatsapp' ? '#4EC859' : '#3754E2')};
 	border: none;
 	border-radius: 50px;
 	padding: 0.75rem 1.5rem;
@@ -28,7 +28,7 @@ export const SButton = styled(Button)`
 	}
 
 	&:hover {
-		background: ${props => props.colorHover};
+		background: ${props => (props.name === 'whatsapp' ? '#2DAF38' : '#304ACB')};
 		cursor: pointer;
 	}
 `;

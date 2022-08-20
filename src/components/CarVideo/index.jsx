@@ -7,9 +7,9 @@ export const CarVideo = () => {
 			<iframe
 				src="https://www.youtube.com/embed/cFyrTEYyq64"
 				title="The BMW Concept Z4 (2017)."
-				frameborder="0"
+				frameBorder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen
+				allowFullScreen
 			></iframe>
 			<p>
 				<strong>Texto Legal:</strong>
