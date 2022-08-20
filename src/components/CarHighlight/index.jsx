@@ -4,6 +4,7 @@ import fuel from '../../assets/icons/fuel.svg';
 import engine from '../../assets/icons/engine.svg';
 import thunder from '../../assets/icons/thunder.svg';
 import speed from '../../assets/icons/speed.svg';
+import { Link } from 'react-router-dom';
 
 export const CarHighlight = () => {
 	return (
@@ -58,7 +59,13 @@ export const CarHighlight = () => {
 							</span>
 						</div>
 					</div>
-					<S.SButton>TENHO INTERESSE</S.SButton>
+					{/* <Link to="/"> */}
+					<S.SButton>
+						<a href="/" target="_blank">
+							TENHO INTERESSE
+						</a>
+					</S.SButton>
+					{/* </Link> */}
 				</div>
 			</S.SCarContainer>
 		</S.SContainer>

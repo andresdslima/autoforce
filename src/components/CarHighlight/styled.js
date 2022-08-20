@@ -33,11 +33,14 @@ export const SButton = styled(Button)`
 	border-radius: 50px;
 	padding: 10px 40px;
 	opacity: 1;
-	color: #fff;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 19px;
+
+	a {
+		color: #fff;
+	}
 
 	&:hover {
 		opacity: 0.8;
@@ -50,7 +53,7 @@ export const SCarContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	border-bottom: 3px solid #333;
-  padding-bottom: 5rem;
+	padding-bottom: 5rem;
 
 	div {
 		width: 100%;
@@ -82,7 +85,7 @@ export const SCarContainer = styled.div`
 			color: #333;
 			border-left: 4px solid #e5e5e5;
 			padding-left: 1rem;
-      margin-bottom: 1rem;
+			margin-bottom: 1rem;
 		}
 
 		span {
