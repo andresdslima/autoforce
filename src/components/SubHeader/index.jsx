@@ -4,8 +4,12 @@ export const SubHeader = () => {
 	return (
 		<S.SContainer>
 			<div>
-				<span>Ofertas → Novo Série 1</span>
-				<span>Voltar para página anterior</span>
+				<span>
+					Ofertas → <em>Novo Série 1</em>
+				</span>
+				<span>
+					<em>Voltar para página anterior</em>
+				</span>
 			</div>
 			<div>
 				<h1>BMW Série 4 Cabrio</h1>
