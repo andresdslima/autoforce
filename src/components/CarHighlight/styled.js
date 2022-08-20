@@ -32,15 +32,17 @@ export const SButton = styled(Button)`
 	border: none;
 	border-radius: 50px;
 	padding: 10px 40px;
-	opacity: 1;
-	color: #fff;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 19px;
 
+	a {
+		color: #fff;
+	}
+
 	&:hover {
-		opacity: 0.8;
+		background: #304acb;
 		cursor: pointer;
 	}
 `;
@@ -58,7 +60,51 @@ export const SCarContainer = styled.div`
 		img {
 			&.car {
 				width: 85%;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					transform: scale(1.1);
+					cursor: pointer;
+				}
 			}
+		}
+
+		&.tooltip {
+			position: relative;
+			display: inline-block;
+		}
+
+		span {
+			&.tooltiptext {
+				visibility: hidden;
+				width: 120px;
+				background-color: #555;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				position: absolute;
+				z-index: 1;
+				width: 120px;
+				bottom: 75%;
+				left: 50%;
+				margin-left: -90px;
+
+				&::after {
+					content: '';
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					margin-left: -5px;
+					border-width: 5px;
+					border-style: solid;
+					border-color: #555 #0000 #0000 #0000;
+				}
+			}
+		}
+
+		&.tooltip:hover span.tooltiptext {
+			visibility: visible;
 		}
 
 		strong {

@@ -17,13 +17,13 @@ export const Header = () => {
 				</Link>
 			</div>
 			<div>
-				<S.SButton color="#3754E2">
+				<S.SButton color="#3754E2" colorHover="#304ACB">
 					<a href="tel:11888888888" target="_blank" rel="noreferrer">
 						<img src={phone} alt="Ligue agora" />
 						LIGUE AGORA
 					</a>
 				</S.SButton>
-				<S.SButton color="#4EC859">
+				<S.SButton color="#4EC859" colorHover="#2DAF38">
 					<a
 						href="https://api.whatsapp.com/send?phone=5511999999999"
 						target="_blank"

@@ -17,7 +17,6 @@ export const SButton = styled(Button)`
 	border-radius: 50px;
 	padding: 0.75rem 1.5rem;
 	margin-left: 2rem;
-	opacity: 1;
 
 	a {
 		color: #fff;
@@ -29,7 +28,7 @@ export const SButton = styled(Button)`
 	}
 
 	&:hover {
-		opacity: 0.8;
+		background: ${props => props.colorHover};
 		cursor: pointer;
 	}
 `;
