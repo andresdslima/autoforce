@@ -52,7 +52,7 @@ export const SCarContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	border-bottom: 3px solid #333;
-  padding-bottom: 5rem;
+	padding-bottom: 5rem;
 
 	div {
 		width: 100%;
@@ -145,11 +145,11 @@ export const SCarContainer = styled.div`
 			margin: 2rem 0;
 			row-gap: 2rem;
 
-			span {
-				margin-left: 1rem;
+			div {
+				display: flex;
 
-				strong {
-					margin-left: 3.5rem;
+				span {
+					margin-left: 1rem;
 				}
 			}
 		}
