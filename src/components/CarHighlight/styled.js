@@ -128,7 +128,7 @@ export const SCarContainer = styled.div`
 			color: #333;
 			border-left: 4px solid #e5e5e5;
 			padding-left: 1rem;
-      margin-bottom: 1rem;
+			margin-bottom: 1rem;
 		}
 
 		span {

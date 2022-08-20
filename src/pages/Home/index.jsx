@@ -3,6 +3,7 @@ import { Footer } from '../../components/Footer';
 import { SubHeader } from '../../components/SubHeader';
 import { CarHighlight } from '../../components/CarHighlight';
 import { CarDescription } from '../../components/CarDescription';
+import { CarVideo } from '../../components/CarVideo';
 
 export const Home = () => {
 	return (
@@ -11,6 +12,7 @@ export const Home = () => {
 			<SubHeader />
 			<CarHighlight />
 			<CarDescription />
+			<CarVideo />
 			<Footer />
 		</>
 	);
