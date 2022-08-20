@@ -33,6 +33,10 @@ export const SContainer = styled(Container)`
 			width: 100%;
 			font-size: 24px;
 		}
+
+		h4 {
+			text-align: center;
+		}
 	}
 `;
 
@@ -171,13 +175,54 @@ export const SCarContainer = styled.div`
 
 		div {
 			&.gridContainer {
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-template-rows: 1fr;
+				overflow-x: auto;
+
+				div {
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					margin: 0 1rem;
+					padding: 0 2rem;
+
+					img {
+						width: 50%;
+					}
+
+					span {
+						margin: 0;
+						margin-top: 0.5rem;
+					}
+				}
 			}
 
 			&#mobile {
 				display: flex;
+				flex-direction: column;
 				justify-content: center;
+				align-items: center;
+				gap: 1rem;
 			}
 		}
+	}
+
+	@media (max-width: 425px) {
+		div {
+			&.gridContainer {
+				margin-bottom: 0;
+			}
+		}
+	}
+`;
+
+export const SScroll = styled(Button)`
+	border: none;
+	background-color: transparent;
+	display: none;
+	transform: rotate(90deg);
+
+	@media (max-width: 425px) {
+		display: block;
 	}
 `;

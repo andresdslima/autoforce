@@ -6,6 +6,7 @@ import fuel from '../../assets/icons/fuel.svg';
 import engine from '../../assets/icons/engine.svg';
 import thunder from '../../assets/icons/thunder.svg';
 import speed from '../../assets/icons/speed.svg';
+import pageUp from '../../assets/icons/pageUp.svg';
 import bmw from '../../assets/audio/bmw.mp3';
 // https://www.bmw.in/en/topics/Fascination-BMW/bmw-engine-sound.html
 
@@ -90,6 +91,9 @@ export const CarHighlight = () => {
 						</div>
 					</div>
 					<div id="mobile">
+						<S.SScroll>
+							<img src={pageUp} alt="Seta para a direita" />
+						</S.SScroll>
 						<S.SButton>
 							<a
 								href="https://site.autoforce.com"
